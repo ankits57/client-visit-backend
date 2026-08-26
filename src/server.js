@@ -6,7 +6,7 @@ const app = require("./app");
 const connectDB = require("./config/db");
 const { initializeSocket } = require("./socket");
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 3030;
 
 connectDB();
 
