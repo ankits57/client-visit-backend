@@ -78,7 +78,7 @@ const generatePublicLink = asyncHandler(async (req, res) => {
 
   await visit.save();
 
-  const publicUrl = `http://localhost:5173/visit/${publicToken}`;
+  const publicUrl = `${process.env.CLIENT_URL}/visit/${publicToken}`;
 
   res.status(200).json({
     success: true,
